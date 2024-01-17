@@ -1,13 +1,21 @@
-function firstWord(s) {
+function firstWord(s){
   // your code here
-	let index = 0;
+	// let index = 0;
+	// for(let i=0 ; i<s.length ; i++){
+	// 	if(s[i]===" "){
+	// 		index = i;
+	// 		break;
+	// 	}
+	// }
+	// return s.slice(0,index);
+	let result = "";
 	for(let i=0 ; i<s.length ; i++){
 		if(s[i]===" "){
-			index = i;
-			break;
+			return result;
 		}
+		result += s[i];
 	}
-	return s.slice(0,index);
+	return result;
 }
 
 // Do not change the code below
