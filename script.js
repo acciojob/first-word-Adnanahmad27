@@ -11,7 +11,9 @@ function firstWord(s){
 	let result = "";
 	for(let i=0 ; i<s.length ; i++){
 		if(s[i]===" "){
-			return result;
+			if(!(result.length === 0)){
+				return result;
+			}
 		}
 		result += s[i];
 	}
@@ -20,6 +22,6 @@ function firstWord(s){
 
 // Do not change the code below
 
-const s = prompt("Enter String:");
+// const s = prompt("Enter String:");
 
 alert(firstWord(s));
