@@ -14,14 +14,15 @@ function firstWord(s){
 			if(!(result.length === 0)){
 				return result;
 			}
+		}else{
+			result += s[i];
 		}
-		result += s[i];
 	}
 	return result;
 }
 
 // Do not change the code below
 
-const s = prompt("Enter String:");
+// const s = prompt("Enter String:");
 
 alert(firstWord(s));
